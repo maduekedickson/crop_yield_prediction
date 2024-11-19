@@ -7,7 +7,7 @@ dtr = pickle.load(open('dtr.pkl', 'rb'))
 preprocessor = pickle.load(open('preprocessor.pkl', 'rb'))
 
 # App title
-st.title("🌾 Crop Yield Prediction ML Model 🌾")
+st.title("🌾 Crop Yield Prediction Model 🌾")
 
 # Display crop images in a row
 col1, col2, col3, col4 = st.columns(4)
@@ -28,7 +28,7 @@ rainfall = st.number_input("Average Rainfall (mm/year)", min_value=0.0, step=1.0
 pesticides = st.number_input("Pesticides Used (tonnes)", min_value=0.0, step=1.0)
 avg_temp = st.number_input("Average Temperature (°C)", min_value=-50.0, max_value=50.0, step=0.1)
 
-area = st.selectbox("Area", ["Albania", "Other"])  # Add all area options if available
+area = st.selectbox("Country", ["Albania", "Other"])  # Add all area options if available
 item = st.selectbox("Crop Type", ["Maize", "Potatoes", "Rice", "Sorghum"])  # Add other crop options if needed
 
 # Predict button
