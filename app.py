@@ -7,7 +7,7 @@ dtr = pickle.load(open('dtr.pkl', 'rb'))
 preprocessor = pickle.load(open('preprocessor.pkl', 'rb'))
 
 # App title
-st.title("Crop Yield Prediction App 🌾")
+st.title("🌾 Crop Yield Prediction ML Model 🌾")
 
 # Display crop images in a row
 col1, col2, col3, col4 = st.columns(4)
